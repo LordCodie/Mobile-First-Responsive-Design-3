@@ -20,6 +20,10 @@ body {
     display: flex;
 }
 
+#menu {
+    display: none;
+}
+
 h1 {
     font-family: Inter, sans-serif;
     font-size: 30px;
@@ -99,6 +103,20 @@ h3 {
     border: 1px solid #DDD;
 }
 
+#french-portrait-desktop, #picasso-portrait-desktop, #venice-portrait-desktop {
+    display: none;
+}
+
+#french-picture,
+#picasso-picture,
+#venice-picture {
+    display: block;
+}
+
+#french-portrait-tablet, #picasso-picture-tablet, #venice-picture-tablet {
+    display: none;
+}
+
 .detail {
     max-width: 247px;
     width: 100%;
@@ -138,10 +156,176 @@ h3 {
 
 /* Small devices (tablets) */
 @media screen and (min-width: 744px) {
-    /* CSS rules */
+    #top-section {
+        background-image: url(Background-tablet.svg);
+    }
+
+    #hamburger {
+        margin-left: 478px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    h2 {
+        font-size: 70px;
+        width: 600px;
+    }
+
+    #title-section {
+        width: 600px;
+        margin: 215px 72px 352px 72px;
+    }
+
+    #bottom-container {
+        display: flex;
+        align-items: stretch;
+        align-items: baseline;
+        max-width: 600px;
+        margin: 0 auto;
+        margin-bottom: 61px;
+    }
+
+    #newscard {
+        max-width: 187px;
+        margin: 0 16px 0 0;
+    }
+
+    .newscard-1 {
+        width: 32%;
+    }
+
+    .newscard-2 {
+        width: 32%;
+    }
+
+    .newscard-3 {
+        width: 32%;
+    }
+
+    #french-picture,
+    #picasso-picture,
+    #venice-picture {
+        display: none;
+    }
+
+    #french-portrait-tablet, #picasso-picture-tablet, #venice-picture-tablet {
+        display: block;
+    }
+
+    .news-title {
+        font-size: 15px;
+        max-width: 123px;
+    }
+
+    .read-more {
+        margin-left: 59px;
+        align-self: baseline;
+    }
+
+    .read-more-1 {
+        margin-top: 28px;
+    }
+
+    .read-more-2 {
+        margin-top: 46px;
+    }
+
+    .read-more-3 {
+        margin-top: 64px;
+    }
 }
 
 /* Large devices (desktops) */
 @media screen and (min-width: 1440px) {
-    /* CSS rules */
+    #top-section {
+        background-image: url(Background-desktop.svg);
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+        margin: 42px 27px 0px 425px;
+    }
+
+    .menu-list li {
+        display: inline;
+        font-family: Inter, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        color: #FFFFFF;
+
+        margin: 0 35px 0 0;
+    }
+
+    #get-started-box {
+        border-radius: 10px;
+        border: 2px solid #FFF;
+        width: 153px;
+        height: 42px;
+        margin: 0;
+        
+    }
+
+    .get-started-text {
+        font-family: Inter, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        color: #FFFFFF;    
+        padding: 9px 27px 11px 27px;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 80px;
+        line-height: 98.88px;
+         width: 748px;
+    }
+
+    #subtitle {
+        width: 528px;
+    }
+
+    #bottom-container {
+        max-width: 1300px;
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+
+    #french-portrait-tablet, #picasso-picture-tablet, #venice-picture-tablet {
+        display: none;
+    }
+
+    #french-portrait-desktop, #picasso-portrait-desktop, #venice-portrait-desktop {
+        display: block;
+    }
+
+    #newscard {
+        max-width: 419px;
+    }
+
+    .news-title {
+        max-width: 355px;
+        font-size: 25px;
+        line-height: 30.26px;
+        width: 100%;
+    }
+
+    .read-more-1 {
+        margin: 34px 32px 32px 291px;
+    }
+
+    .read-more-2 {
+        margin: 34px 32px 32px 291px;
+    }
+
+    .read-more-3 {
+        margin: 64px 32px 32px 291px;
+    }
 }
